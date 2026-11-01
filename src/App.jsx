@@ -2444,7 +2444,7 @@ export default function App() {
       </div>
 
       <footer data-testid="credits" className="border-t border-slate-800 bg-slate-900 px-4 py-3 text-center text-xs text-slate-400">
-        Idea &amp; creation by <strong className="text-slate-200">Pragyan Das</strong> and <strong className="text-slate-200">Zaid Akhtar</strong>
+        Idea &amp; creation by <strong className="text-slate-200">Pragyan</strong> and <strong className="text-slate-200">Zaid</strong>
         <span className="mx-2 text-slate-600">·</span>
         <a href="https://github.com/ZaiD-lgtm/LPC1768" target="_blank" rel="noreferrer" className="text-emerald-400 hover:text-emerald-300 underline-offset-2 hover:underline">Source on GitHub</a>
       </footer>

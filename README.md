@@ -2,9 +2,9 @@
 
 A browser-based simulator of the **ALS-SDA-ARMCTXM3-01** trainer kit, built around the NXP LPC1768 (ARM Cortex-M3). Write embedded C or ARM assembly, wire up the patch bay, and see LEDs, the 7-segment display, the 16x2 LCD, the keypad, the ADC and PWM respond as they would on the real board. There's nothing to install: the compiler and the chip emulator both run in your browser.
 
-**Live:** https://lpc1768-trainer-sim.lamp-light.workers.dev
+**Live:** https://lpc1768.lamplight.sbs
 
-**Idea & creation:** Pragyan Das and Zaid Akhtar
+**Idea & creation:** Pragyan and Zaid
 
 ## What it does
 
@@ -92,6 +92,6 @@ This is an educational model, not cycle-accurate hardware. Firmware runs in boun
 
 ## Credits
 
-Idea and creation by **Pragyan Das** and **Zaid Akhtar**.
+Idea and creation by **Pragyan** and **Zaid**.
 
 `backend/include/LPC17xx.h` is the NXP peripheral-layout header from [ARMmbed/mbed-os](https://github.com/ARMmbed/mbed-os/blob/master/targets/TARGET_NXP/TARGET_LPC176X/device/LPC17xx.h), with its upstream copyright and license notice retained.
