@@ -1,0 +1,16 @@
+{
+  "name": "lpc1768-simulator",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "vite build",
+    "start": ".venv/bin/python backend/server.py --serve",
+    "setup": "bash scripts/setup.sh",
+    "test": ".venv/bin/python -m unittest discover -s tests -v",
+    "test:ui": "playwright test"
+  },
+  "dependencies": { "react": "18.2.0", "react-dom": "18.2.0" },
+  "devDependencies": { "vite": "^6.4.0", "tailwindcss": "^3.4.17", "postcss": "^8.5.6", "autoprefixer": "^10.4.21", "@playwright/test": "^1.56.1" }
+}
