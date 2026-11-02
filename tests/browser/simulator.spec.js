@@ -5,6 +5,7 @@ test('boots, executes GPIO, pauses, compiles an uploaded C file, and reports err
   page.on('pageerror', error => errors.push(error.message));
   await page.goto('/');
   await expect(page.getByTestId('build-output')).toContainText('Compiled & running');
+  await expect(page.getByTestId('credits')).toContainText('Pragyan and Zaid');
   await page.getByRole('button', { name: 'MMIO Registers', exact: true }).click();
   const pins = page.getByRole('row').filter({ hasText: 'LPC_GPIO0->FIOPIN' }).getByRole('cell').nth(1);
   await expect(pins).not.toHaveText('0x00000000');

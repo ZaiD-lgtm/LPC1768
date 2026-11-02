@@ -269,7 +269,7 @@ const KEYPAD_KEYS = [
 ];
 
 // ============================================================================
-// Bundled C examples are in templates.js; C builds use ARM GCC.
+// Bundled C examples are in templates.js; C builds use the in-browser compiler (src/engine).
 // ============================================================================
 // ============================================================================
 // 4. ENGINE 2: LIVE ARMv7-M ASSEMBLY INTERPRETER & MEMORY EMULATOR
@@ -2228,7 +2228,7 @@ export default function App() {
               />
 
               <div className="bg-slate-950 border border-slate-800 rounded-lg p-2.5 font-mono text-[11px] space-y-0.5">
-                <div className="text-slate-500 font-bold">ARM GCC Build Output</div>
+                <div className="text-slate-500 font-bold">Build Output</div>
                 <div role="status" data-testid="build-output" className={`whitespace-pre-wrap break-words max-h-48 overflow-auto ${compileStatus.ok ? 'text-emerald-400' : 'text-rose-400'}`}>
                   {compileStatus.msg}
                 </div>
@@ -2442,6 +2442,12 @@ export default function App() {
           )}
         </div>
       </div>
+
+      <footer data-testid="credits" className="border-t border-slate-800 bg-slate-900 px-4 py-3 text-center text-xs text-slate-400">
+        Idea &amp; creation by <strong className="text-slate-200">Pragyan</strong> and <strong className="text-slate-200">Zaid</strong>
+        <span className="mx-2 text-slate-600">·</span>
+        <a href="https://github.com/ZaiD-lgtm/LPC1768" target="_blank" rel="noreferrer" className="text-emerald-400 hover:text-emerald-300 underline-offset-2 hover:underline">Source on GitHub</a>
+      </footer>
     </div>
   );
 }
